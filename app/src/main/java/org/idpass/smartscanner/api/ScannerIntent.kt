@@ -18,37 +18,37 @@
 package org.idpass.smartscanner.api
 
 import android.content.Intent
-import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_INTENT
-import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_BARCODE_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_IDPASS_LITE_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_MRZ_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_BARCODE_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_IDPASS_LITE_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_MRZ_INTENT
 
 class ScannerIntent {
 
     companion object {
         @JvmStatic
         fun intentBarcode(useODK : Boolean = false): Intent {
-            val intent = Intent(getAction(useODK))
-            intent.putExtra(ScannerConstants.SCANNER, ScannerConstants.BARCODE)
-            return intent
+            val action = if (useODK) IDPASS_SMARTSCANNER_ODK_BARCODE_INTENT else  IDPASS_SMARTSCANNER_BARCODE_INTENT
+            return Intent(action)
         }
 
         @JvmStatic
         fun intentIDPassLite(useODK : Boolean = false): Intent {
-            val intent = Intent(getAction(useODK))
-            intent.putExtra(ScannerConstants.SCANNER, ScannerConstants.IDPASS_LITE)
-            return intent
+            val action = if (useODK) IDPASS_SMARTSCANNER_ODK_IDPASS_LITE_INTENT else  IDPASS_SMARTSCANNER_IDPASS_LITE_INTENT
+            return Intent(action)
         }
 
         @JvmStatic
         fun intentMrz(useODK : Boolean = false,
                       isManualCapture : Boolean = false,
                       mrzFormat : String? = null): Intent {
-            val intent = Intent(getAction(useODK))
-            intent.putExtra(ScannerConstants.SCANNER, ScannerConstants.MRZ)
+            val action = if (useODK) IDPASS_SMARTSCANNER_ODK_MRZ_INTENT else  IDPASS_SMARTSCANNER_MRZ_INTENT
+            val intent = Intent(action)
             intent.putExtra(ScannerConstants.MRZ_MANUAL_CAPTURE_EXTRA, isManualCapture)
             intent.putExtra(ScannerConstants.MRZ_FORMAT_EXTRA, mrzFormat)
             return intent
         }
-
-        private fun getAction(useODK : Boolean) = if (useODK) IDPASS_SMARTSCANNER_ODK_INTENT else  IDPASS_SMARTSCANNER_INTENT
     }
 }
