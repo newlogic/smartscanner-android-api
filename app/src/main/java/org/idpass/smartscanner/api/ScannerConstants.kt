@@ -52,6 +52,7 @@ object ScannerConstants {
     const val IDPASS_LITE_ADDRESS_SUBLOCALITY = "address_sublocality"
     const val IDPASS_LITE_ADDRESS_ORGANIZATION = "address_organization"
     const val IDPASS_LITE_RAW = "raw_card"
+    const val IDPASS_LITE_PIN_CODE = "pin_code"
 
     // MRZ
     const val MRZ_IMAGE = "image"
