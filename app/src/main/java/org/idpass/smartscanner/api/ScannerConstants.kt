@@ -21,8 +21,8 @@ package org.idpass.smartscanner.api
 object ScannerConstants {
 
     // Scanner
-    const val MODE = "MODE"
-    const val RESULT = "RESULT"
+    const val MODE = "mode"
+    const val RESULT = "result"
 
     // Types
     const val BARCODE = "barcode"
@@ -30,39 +30,41 @@ object ScannerConstants {
     const val MRZ = "mrz"
 
     // BARCODE
-    const val BARCODE_IMAGE = "BARCODE_IMAGE"
-    const val BARCODE_CORNERS = "BARCODE_CORNERS"
-    const val BARCODE_VALUE = "BARCODE_VALUE"
+    const val BARCODE_IMAGE = "image"
+    const val BARCODE_CORNERS = "corners"
+    const val BARCODE_VALUE = "value"
 
     //ID PASS LITE
-    const val IDPASS_LITE_FULL_NAME = "IDPASS_LITE_FULL_NAME"
-    const val IDPASS_LITE_GIVEN_NAME = "IDPASS_LITE_GIVEN_NAME"
-    const val IDPASS_LITE_SURNAME = "IDPASS_LITE_SURNAME"
-    const val IDPASS_LITE_DATE_OF_BIRTH = "IDPASS_LITE_DATE_OF_BIRTH"
-    const val IDPASS_LITE_PLACE_OF_BIRTH = "IDPASS_LITE_PLACE_OF_BIRTH"
-    const val IDPASS_LITE_UIN = "IDPASS_LITE_UIN"
-    const val IDPASS_LITE_RAW = "IDPASS_LITE_RAW"
+    const val IDPASS_LITE_IMAGE = "image"
+    const val IDPASS_LITE_FULL_NAME = "full_name"
+    const val IDPASS_LITE_GIVEN_NAMES = "given_names"
+    const val IDPASS_LITE_SURNAME = "surname"
+    const val IDPASS_LITE_DATE_OF_BIRTH = "date_of_birth"
+    const val IDPASS_LITE_PLACE_OF_BIRTH = "place_of_birth"
+    const val IDPASS_LITE_UIN = "document_number"
+    const val IDPASS_LITE_RAW = "raw_card"
 
     // MRZ
-    const val MRZ_IMAGE = "MRZ_IMAGE"
-    const val MRZ_CODE = "MRZ_CODE"
-    const val MRZ_CODE_1 = "MRZ_CODE_1"
-    const val MRZ_CODE_2 = "MRZ_CODE_2"
-    const val MRZ_DATE_OF_BIRTH = "MRZ_DATE_OF_BIRTH"
-    const val MRZ_DOCUMENT_NUMBER = "MRZ_DOCUMENT_NUMBER"
-    const val MRZ_EXPIRY_DATE = "MRZ_EXPIRY_DATE"
-    const val MRZ_FORMAT = "MRZ_FORMAT"
-    const val MRZ_GIVEN_NAMES = "MRZ_GIVEN_NAMES"
-    const val MRZ_SURNAME = "MRZ_SURNAME"
-    const val MRZ_ISSUING_COUNTRY = "MRZ_ISSUING_COUNTRY"
-    const val MRZ_NATIONALITY = "MRZ_NATIONALITY"
-    const val MRZ_SEX = "MRZ_SEX"
+    const val MRZ_IMAGE = "image"
+    const val MRZ_CODE = "code"
+    const val MRZ_CODE_1 = "code_1"
+    const val MRZ_CODE_2 = "code_2"
+    const val MRZ_DATE_OF_BIRTH = "date_of_birth"
+    const val MRZ_DOCUMENT_NUMBER = "document_number"
+    const val MRZ_EXPIRY_DATE = "expiry_date"
+    const val MRZ_FORMAT = "format"
+    const val MRZ_GIVEN_NAMES = "given_names"
+    const val MRZ_SURNAME = "surname"
+    const val MRZ_ISSUING_COUNTRY = "issuing_country"
+    const val MRZ_NATIONALITY = "nationality"
+    const val MRZ_SEX = "sex"
+    const val MRZ_RAW = "raw_mrz"
     // MRZ Manual Capture
-    const val MRZ_MANUAL_CAPTURE_EXTRA = "MRZ_MANUAL_CAPTURE_EXTRA"
+    const val MRZ_MANUAL_CAPTURE_EXTRA = "manual_capture_extra"
     // MRZ Format
-    const val MRZ_FORMAT_EXTRA = "MRZ_FORMAT_EXTRA"
-    const val MRZ_FORMAT_MRTD_TD1= "MRTD_TD1"
-    const val MRZ_FORMAT_MRP = "MRP"
+    const val MRZ_FORMAT_EXTRA = "format_extra"
+    const val MRZ_FORMAT_MRTD_TD1= "mrtd_td1"
+    const val MRZ_FORMAT_MRP = "mrp"
 
     // ODK
     const val IDPASS_ODK_INTENT_DATA = "odk_intent_data"
