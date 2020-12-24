@@ -42,6 +42,14 @@ object ScannerConstants {
     const val IDPASS_LITE_DATE_OF_BIRTH = "date_of_birth"
     const val IDPASS_LITE_PLACE_OF_BIRTH = "place_of_birth"
     const val IDPASS_LITE_UIN = "document_number"
+    const val IDPASS_LITE_ADDRESS_POSTAL_CODE = "address_postal_code"
+    const val IDPASS_LITE_ADDRESS_ADMINISTRATIVE_AREA = "address_administrative_area"
+    const val IDPASS_LITE_ADDRESS_ADDRESS_LINES = "address_address_lines"
+    const val IDPASS_LITE_ADDRESS_LANGUAGE_CODE = "address_language_code"
+    const val IDPASS_LITE_ADDRESS_SORTING_CODE = "address_sorting_code"
+    const val IDPASS_LITE_ADDRESS_LOCALITY = "address_locality"
+    const val IDPASS_LITE_ADDRESS_SUBLOCALITY = "address_sublocality"
+    const val IDPASS_LITE_ADDRESS_ORGANIZATION = "address_organization"
     const val IDPASS_LITE_RAW = "raw_card"
 
     // MRZ
