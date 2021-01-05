@@ -1,6 +1,6 @@
 # SmartScanner Android
 
-Convenience API for [ID PASS SmartScanner](https://github.com/idpass/idpass-smart-scanner-core/) to simplify the Intent call out process.
+Convenience API for [SmartScanner Core](https://github.com/idpass/smartscanner-core/) to simplify the Intent call out process.
 
 This library provides methods that can be called to initiate scanning of MRZ, barcode, and [ID PASS Lite](https://github.com/idpass/idpass-lite) cards, instead of manually creating and calling intents.
 
@@ -18,7 +18,7 @@ dependencies {
 }
 ```
 
-If you want to build this library from source, instructions to do so can be found in the [Building from source](https://github.com/idpass/smartscanner-android-api/wiki/Building-from-source) wiki page.
+If you want to build this library from source, instructions to do so can be found in the [Building from source](https://github.com/idpass/smartscanner-android/wiki/Building-from-source) wiki page.
 
 ## Usage
 
@@ -79,12 +79,12 @@ class MainActivity : AppCompatActivity() {
   - **Parameters:**
     - `useODK` : `Boolean`, default: `false`. Whether to create intents for ODK or not.
     - `isManualCapture` : `Boolean`, default: `false`. Whether the MRZ is captured manually by the user or automatically once MRZ data is detected. This is added as extended data to the created Intent.
-    - `mrzFormat` : `String`, default: `null`. The MRZ format to be scanned. One of the [supported MRZ formats](https://github.com/idpass/idpass-smart-scanner-core/wiki/API-Reference#orgidpasssmartscannerlibconfigmrzformat). This is added as extended data to the created Intent.
+    - `mrzFormat` : `String`, default: `null`. The MRZ format to be scanned. One of the [supported MRZ formats](https://github.com/idpass/smartscanner-core/wiki/API-Reference#orgidpasssmartscannerlibconfigmrzformat). This is added as extended data to the created Intent.
   - **Return:** [`Intent`][android:Intent]
 
 #### `ScannerConstants`
 
-Provides [constant variables](app/src/main/java/org/idpass/smartscanner/api/ScannerConstants.kt) that can be used instead of hardcoded strings. We recommend using these constants when working with this library and [idpass-smart-scanner-core](https://github.com/idpass/idpass-smart-scanner-core/).
+Provides [constant variables](app/src/main/java/org/idpass/smartscanner/api/ScannerConstants.kt) that can be used instead of hardcoded strings. We recommend using these constants when working with this library and [smartscanner-core](https://github.com/idpass/smartscanner-core/).
 
 ## License
 
