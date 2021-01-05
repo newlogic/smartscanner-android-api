@@ -1,6 +1,6 @@
 # Contributing to SmartScanner Android
 
-Thank you for your interest to contribute to ID PASS SmartScanner! We want to make contributing to this project as easy as possible, whether it's:
+Thank you for your interest to contribute to ID PASS SmartScanner Android! We want to make contributing to this project as easy as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code
