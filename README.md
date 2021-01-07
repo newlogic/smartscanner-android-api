@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
     if (requestCode == OP_SCANNER) {
       if (resultCode == Activity.RESULT_OK) {
-        val bundle = intent?.getBundleExtra("result")
+        val bundle = intent?.getBundleExtra(ScannerConstants.RESULT)
       }
     }
   }
@@ -72,7 +72,6 @@ class MainActivity : AppCompatActivity() {
 - `intentIDPassLite()` : Create an Android Intent for scanning [ID PASS Lite](https://github.com/idpass/idpass-lite) cards.
   - **Parameters:**
     - `useODK` : `Boolean`, default: `false`. Whether to create intents for ODK or not.
-    - `pinCode` : `String`, default: `null`. PIN code for the ID PASS Lite card, to be added as extended data to the created Intent.
   - **Return:** [`Intent`][android:Intent]
 
 - `intentMrz()` : Create and Android Intent for scanning MRZ.
