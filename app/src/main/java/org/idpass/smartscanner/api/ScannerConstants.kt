@@ -29,13 +29,16 @@ object ScannerConstants {
     const val IDPASS_LITE = "idpass-lite"
     const val MRZ = "mrz"
 
+    // GZIPPED
+    const val GZIPPED_ENABLED = "gzipped_enabled"
+    const val JSON_ENABLED = "json_enabled"
+    const val JSON_PATH = "json_path"
+
     // BARCODE
     const val BARCODE_IMAGE = "image"
     const val BARCODE_CORNERS = "corners"
     const val BARCODE_VALUE = "value"
     // QR CODE
-    const val QRCODE_GZIPPED_ENABLED = "gzipped_enabled"
-    const val QRCODE_GZIPPED_PATH = "gzipped_path"
     const val QRCODE_JSON_VALUE = "qr_code_json_value"
     const val QRCODE_TEXT = "qr_code_text"
 
@@ -57,7 +60,6 @@ object ScannerConstants {
     const val IDPASS_LITE_ADDRESS_SUBLOCALITY = "address_sublocality"
     const val IDPASS_LITE_ADDRESS_ORGANIZATION = "address_organization"
     const val IDPASS_LITE_RAW = "raw_card"
-    const val IDPASS_LITE_PIN_CODE = "pin_code"
 
     // MRZ
     const val MRZ_IMAGE = "image"
