@@ -33,6 +33,11 @@ object ScannerConstants {
     const val BARCODE_IMAGE = "image"
     const val BARCODE_CORNERS = "corners"
     const val BARCODE_VALUE = "value"
+    // QR CODE
+    const val QRCODE_GZIPPED_ENABLED = "gzipped_enabled"
+    const val QRCODE_GZIPPED_PATH = "gzipped_path"
+    const val QRCODE_JSON_VALUE = "qr_code_json_value"
+    const val QRCODE_TEXT = "qr_code_text"
 
     //ID PASS LITE
     const val IDPASS_LITE_IMAGE = "image"
