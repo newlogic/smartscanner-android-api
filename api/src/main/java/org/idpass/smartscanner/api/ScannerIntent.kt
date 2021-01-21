@@ -20,12 +20,12 @@ package org.idpass.smartscanner.api
 import android.content.Intent
 import org.idpass.smartscanner.api.ScannerConstants.GZIPPED_ENABLED
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_BARCODE_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_GZIP_QRCODE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_IDPASS_LITE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_MRZ_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_BARCODE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_IDPASS_LITE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_MRZ_INTENT
-import org.idpass.smartscanner.api.ScannerConstants.JSON_ENABLED
 
 class ScannerIntent {
 
@@ -39,12 +39,11 @@ class ScannerIntent {
         @JvmStatic
         fun intentIDPassLite(useODK : Boolean = false): Intent {
             val action = if (useODK) IDPASS_SMARTSCANNER_ODK_IDPASS_LITE_INTENT else IDPASS_SMARTSCANNER_IDPASS_LITE_INTENT
-            val intent = Intent(action)
-            return intent
+            return Intent(action)
         }
 
         @JvmStatic
-        fun intentMrz(useODK : Boolean = false,
+        fun intentMRZ(useODK : Boolean = false,
                       isManualCapture : Boolean = false,
                       mrzFormat : String? = null): Intent {
             val action = if (useODK) IDPASS_SMARTSCANNER_ODK_MRZ_INTENT else IDPASS_SMARTSCANNER_MRZ_INTENT
@@ -55,11 +54,14 @@ class ScannerIntent {
         }
 
         @JvmStatic
-        fun intentQRcode(isGzipped : Boolean = false, path : String? = null): Intent {
-            val action = if (isGzipped) GZIPPED_ENABLED else JSON_ENABLED
-            val intent = Intent(action)
-            intent.putExtra(ScannerConstants.JSON_PATH, path)
-            return Intent(action)
+        fun intentQRCode(isGzipped : Boolean, isJson : Boolean, jsonPath : String? = null): Intent {
+            val intent = Intent(IDPASS_SMARTSCANNER_GZIP_QRCODE_INTENT)
+            intent.putExtra(ScannerConstants.JSON_ENABLED, isJson)
+            intent.putExtra(GZIPPED_ENABLED, isGzipped)
+            if (!jsonPath.isNullOrEmpty()) {
+                intent.putExtra(ScannerConstants.JSON_PATH, jsonPath)
+            }
+            return intent
         }
     }
 }
