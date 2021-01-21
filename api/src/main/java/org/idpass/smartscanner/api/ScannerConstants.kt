@@ -29,18 +29,10 @@ object ScannerConstants {
     const val IDPASS_LITE = "idpass-lite"
     const val MRZ = "mrz"
 
-    // GZIPPED
-    const val GZIPPED_ENABLED = "gzipped_enabled"
-    const val JSON_ENABLED = "json_enabled"
-    const val JSON_PATH = "json_path"
-
     // BARCODE
     const val BARCODE_IMAGE = "image"
     const val BARCODE_CORNERS = "corners"
     const val BARCODE_VALUE = "value"
-    // QR CODE
-    const val QRCODE_JSON_VALUE = "qr_code_json_value"
-    const val QRCODE_TEXT = "qr_code_text"
 
     //ID PASS LITE
     const val IDPASS_LITE_IMAGE = "image"
@@ -76,13 +68,19 @@ object ScannerConstants {
     const val MRZ_NATIONALITY = "nationality"
     const val MRZ_SEX = "sex"
     const val MRZ_RAW = "raw_mrz"
-    // MRZ Manual Capture
-    const val MRZ_MANUAL_CAPTURE_EXTRA = "manual_capture_extra"
     // MRZ Format
     const val MRZ_FORMAT_EXTRA = "format_extra"
     const val MRZ_FORMAT_MRTD_TD1= "mrtd_td1"
     const val MRZ_FORMAT_MRP = "mrp"
+    // MRZ Manual Capture
+    const val MRZ_MANUAL_CAPTURE_EXTRA = "manual_capture_extra"
 
+    // QR CODE GZIP/JSON
+    const val GZIPPED_ENABLED = "gzipped"
+    const val JSON_ENABLED = "json"
+    const val JSON_PATH = "json_path"
+    const val QRCODE_JSON_VALUE = "qr_code_json_value"
+    const val QRCODE_TEXT = "qr_code_text"
     // ODK
     const val IDPASS_ODK_INTENT_DATA = "odk_intent_data"
     const val IDPASS_ODK_PREFIX_EXTRA = "prefix"
@@ -95,4 +93,6 @@ object ScannerConstants {
     const val IDPASS_SMARTSCANNER_ODK_MRZ_INTENT = "org.idpass.smartscanner.odk.MRZ_SCAN"
     const val IDPASS_SMARTSCANNER_ODK_BARCODE_INTENT = "org.idpass.smartscanner.odk.BARCODE_SCAN"
     const val IDPASS_SMARTSCANNER_ODK_IDPASS_LITE_INTENT = "org.idpass.smartscanner.odk.IDPASS_LITE_SCAN"
+    // Intents QR Code
+    const val IDPASS_SMARTSCANNER_GZIP_QRCODE_INTENT = "org.idpass.smartscanner.gzip.QRCODE_SCAN"
 }
