@@ -20,12 +20,12 @@ package org.idpass.smartscanner.api
 import android.content.Intent
 import org.idpass.smartscanner.api.ScannerConstants.GZIPPED_ENABLED
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_BARCODE_INTENT
-import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_GZIP_QRCODE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_IDPASS_LITE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_MRZ_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_BARCODE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_IDPASS_LITE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_ODK_MRZ_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_QRCODE_INTENT
 
 class ScannerIntent {
 
@@ -55,7 +55,7 @@ class ScannerIntent {
 
         @JvmStatic
         fun intentQRCode(isGzipped : Boolean, isJson : Boolean, jsonPath : String? = null): Intent {
-            val intent = Intent(IDPASS_SMARTSCANNER_GZIP_QRCODE_INTENT)
+            val intent = Intent(IDPASS_SMARTSCANNER_QRCODE_INTENT)
             intent.putExtra(ScannerConstants.JSON_ENABLED, isJson)
             intent.putExtra(GZIPPED_ENABLED, isGzipped)
             if (!jsonPath.isNullOrEmpty()) {
