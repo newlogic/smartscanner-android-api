@@ -94,4 +94,5 @@ object ScannerConstants {
     const val IDPASS_SMARTSCANNER_ODK_MRZ_INTENT = "org.idpass.smartscanner.odk.MRZ_SCAN"
     const val IDPASS_SMARTSCANNER_ODK_BARCODE_INTENT = "org.idpass.smartscanner.odk.BARCODE_SCAN"
     const val IDPASS_SMARTSCANNER_ODK_IDPASS_LITE_INTENT = "org.idpass.smartscanner.odk.IDPASS_LITE_SCAN"
+    const val IDPASS_SMARTSCANNER_ODK_QRCODE_INTENT = "org.idpass.smartscanner.odk.QRCODE_SCAN"
 }
