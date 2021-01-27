@@ -4,6 +4,8 @@ Convenience API for [SmartScanner Core](https://github.com/idpass/smartscanner-c
 
 This library provides methods that can be called to initiate scanning of MRZ, barcode, and [ID PASS Lite](https://github.com/idpass/idpass-lite) cards, instead of manually creating and calling intents.
 
+**Note: The library's API might keep evolving before we reach v1.0, so be careful when upgrading between these pre-v1.0 versions. Starting at v1.0 we will be careful in introducing breaking API changes.**
+
 ## Installation
 
 Declare Maven Central repository in the dependency configuration, then add this library in the dependencies. An example using `build.gradle`:
