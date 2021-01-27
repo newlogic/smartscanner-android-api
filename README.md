@@ -1,4 +1,4 @@
-# SmartScanner Android
+# SmartScanner Android API
 
 Convenience API for [SmartScanner Core](https://github.com/idpass/smartscanner-core/) to simplify the Intent call out process.
 
@@ -16,11 +16,11 @@ repositories {
 }
 
 dependencies {
-  implementation "org.idpass:smartscanner-android:0.0.1-SNAPSHOT"
+  implementation "org.idpass:smartscanner-android-api:0.0.1-SNAPSHOT"
 }
 ```
 
-If you want to build this library from source, instructions to do so can be found in the [Building from source](https://github.com/idpass/smartscanner-android/wiki/Building-from-source) wiki page.
+If you want to build this library from source, instructions to do so can be found in the [Building from source](https://github.com/idpass/smartscanner-android-api/wiki/Building-from-source) wiki page.
 
 ## Usage
 
@@ -86,6 +86,12 @@ class MainActivity : AppCompatActivity() {
 #### `ScannerConstants`
 
 Provides [constant variables](app/src/main/java/org/idpass/smartscanner/api/ScannerConstants.kt) that can be used instead of hardcoded strings. We recommend using these constants when working with this library and [smartscanner-core](https://github.com/idpass/smartscanner-core/).
+
+## Related projects
+
+- [smartscanner-core](https://github.com/idpass/smartscanner-core) - Android library for scanning MRZ, Barcode, and ID PASS Lite cards
+- [smartscanner-capacitor](https://github.com/idpass/smartscanner-capacitor) - SmartScanner [Capacitor](https://capacitorjs.com/) plugin
+- [smartscanner-cordova](https://github.com/idpass/smartscanner-cordova) - SmartScanner [Cordova](https://cordova.apache.org/) plugin
 
 ## License
 
