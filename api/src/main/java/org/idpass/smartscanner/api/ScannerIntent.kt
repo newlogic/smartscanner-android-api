@@ -22,6 +22,8 @@ import org.idpass.smartscanner.api.ScannerConstants.GZIPPED_ENABLED
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_BARCODE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_IDPASS_LITE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_MRZ_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_NFC_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_NFC_SCAN_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_QRCODE_INTENT
 
 class ScannerIntent {
@@ -41,6 +43,15 @@ class ScannerIntent {
             intent.putExtra(ScannerConstants.MRZ_FORMAT_EXTRA, mrzFormat)
             return intent
         }
+
+        @JvmStatic
+        fun intentNFC(mrz : String?): Intent {
+            val intent = Intent(IDPASS_SMARTSCANNER_NFC_INTENT)
+            intent.putExtra(ScannerConstants.NFC_MRZ_STRING, mrz)
+            return intent
+        }
+        @JvmStatic
+        fun intentNFCScan(): Intent = Intent(IDPASS_SMARTSCANNER_NFC_SCAN_INTENT)
 
         @JvmStatic
         fun intentQRCode(isGzipped : Boolean = false, isJson : Boolean = false, jsonPath : String? = null): Intent {
