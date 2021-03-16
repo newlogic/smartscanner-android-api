@@ -81,6 +81,7 @@ object ScannerConstants {
     const val NFC_GIVEN_NAMES = "given_names"
     const val NFC_SURNAME = "surname"
     const val NFC_GENDER = "gender"
+    const val NFC_NAME_OF_HOLDER = "name_of_holder"
     const val NFC_DOCUMENT_NUMBER = "document_number"
     const val NFC_EXPIRY_DATE = "expiry_date"
     const val NFC_ISSUING_STATE = "issuing_state"
