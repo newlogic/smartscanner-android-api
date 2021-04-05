@@ -77,6 +77,7 @@ object ScannerConstants {
 
     // NFC
     const val NFC_ACTION = "nfc_action"
+    const val NFC_LOCALE = "nfc_locale"
     const val NFC_MRZ_STRING = "nfc_mrz_string"
     const val NFC_GIVEN_NAMES = "given_names"
     const val NFC_SURNAME = "surname"
