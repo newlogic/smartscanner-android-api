@@ -23,6 +23,7 @@ object ScannerConstants {
     // Scanner
     const val MODE = "mode"
     const val RESULT = "result"
+    const val LANGUAGE = "language"
 
     // Types
     const val BARCODE = "barcode"
@@ -106,6 +107,13 @@ object ScannerConstants {
     const val JSON_PATH = "json_path"
     const val QRCODE_JSON_VALUE = "qr_code_json_value"
     const val QRCODE_TEXT = "qr_code_text"
+
+    // OCR
+    const val OCR_IMAGE = "image"
+    const val OCR_VALUE = "value"
+    const val OCR_TYPE = "type"
+    const val OCR_REGEX = "regex"
+
     // ODK
     const val IDPASS_ODK_INTENT_DATA = "odk_intent_data"
     const val IDPASS_ODK_PREFIX_EXTRA = "prefix"
@@ -116,10 +124,12 @@ object ScannerConstants {
     const val IDPASS_SMARTSCANNER_MRZ_INTENT = "org.idpass.smartscanner.MRZ_SCAN"
     const val IDPASS_SMARTSCANNER_NFC_INTENT = "org.idpass.smartscanner.NFC_SCAN"
     const val IDPASS_SMARTSCANNER_QRCODE_INTENT = "org.idpass.smartscanner.QRCODE_SCAN"
+    const val IDPASS_SMARTSCANNER_OCR_INTENT = "org.idpass.smartscanner.OCR_SCAN"
     // Intents ODK
     const val IDPASS_SMARTSCANNER_ODK_BARCODE_INTENT = "org.idpass.smartscanner.odk.BARCODE_SCAN"
     const val IDPASS_SMARTSCANNER_ODK_IDPASS_LITE_INTENT = "org.idpass.smartscanner.odk.IDPASS_LITE_SCAN"
     const val IDPASS_SMARTSCANNER_ODK_MRZ_INTENT = "org.idpass.smartscanner.odk.MRZ_SCAN"
     const val IDPASS_SMARTSCANNER_ODK_NFC_INTENT = "org.idpass.smartscanner.odk.NFC_SCAN"
     const val IDPASS_SMARTSCANNER_ODK_QRCODE_INTENT = "org.idpass.smartscanner.odk.QRCODE_SCAN"
+    const val IDPASS_SMARTSCANNER_ODK_OCR_INTENT = "org.idpass.smartscanner.odk.OCR_SCAN"
 }

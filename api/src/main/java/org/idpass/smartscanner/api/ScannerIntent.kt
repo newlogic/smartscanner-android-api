@@ -23,6 +23,7 @@ import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_BARCODE_
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_IDPASS_LITE_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_MRZ_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_NFC_INTENT
+import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_OCR_INTENT
 import org.idpass.smartscanner.api.ScannerConstants.IDPASS_SMARTSCANNER_QRCODE_INTENT
 
 class ScannerIntent {
@@ -56,5 +57,8 @@ class ScannerIntent {
             }
             return intent
         }
+
+        @JvmStatic
+        fun intentOCR(): Intent = Intent(IDPASS_SMARTSCANNER_OCR_INTENT)
     }
 }
