@@ -113,7 +113,6 @@ object ScannerConstants {
     const val OCR_VALUE = "value"
     const val OCR_TYPE = "type"
     const val OCR_REGEX = "regex"
-    const val OCR_COUNTRY = "country"
 
     // ODK
     const val IDPASS_ODK_INTENT_DATA = "odk_intent_data"
